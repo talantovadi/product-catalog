@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Catalog</h1>
+      <div class="container">
+        <div class="container_top">
+          <div class="search">
+            <input
+              type="text"
+              class="search_input"
+              placeholder="Search products"
+            />
+
+            <!-- <select class="sort_select">
+            <option value="" hidden>Sort by price</option>
+            <option value="asc">Cheap ones first</option>
+            <option value="desc">Expensive ones first</option>
+            </select> -->
+          </div>
+
+          <div class="dropdown">
+            <div class="dropdown_btn">
+              <span class="dropdown_text">Sort by price</span>
+              <span class="dropdown_arrow">⌵</span>
+            </div>
+            <ul class="dropdown_menu">
+              <li data-value="asc">Cheap ones first</li>
+              <li data-value="desc">Expensive ones first</li>
+            </ul>
+          </div>
+
+          <button class="btn_basket">
+            Basket <span class="count_basket">0</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu">
+          <ul class="header__category">
+            <li>Main</li>
+            <li>Electronics</li>
+            <li>Jewelery</li>
+            <li>Men's clothing</li>
+            <li>Women's clothing</li>
+          </ul>
+          <!-- <button class="btn_basket">
+            Basket <span class="count_basket">0</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+          </button> -->
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box_basket">
+          <button class="btn_close">×</button>
+          <p>Basket</p>
+          <div class="basket_items"></div>
+          <div class="price_basket"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="products">
+        <div class="container">
+          <div class="cards">
+            <!-- <div class="card">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="bag">
+                        <h4>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h4>
+                        <h3>Price: 109.95</h3>
+                        <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15  inches) in the padded sleeve, your everyday</p>
+                        <button>в корзину</button>
+                    </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
